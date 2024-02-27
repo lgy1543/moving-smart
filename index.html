@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>title</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+        ></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"  />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/gsap@3.12.2/dist/ScrollToPlugin.min.js"></script>
+        
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        ></script>
+        <script type="text/javascript" src="./new/js/util.lib.js"></script>
+        <script type="text/javascript" src="./new/js/common.js"></script>
+        <script type="text/javascript" src="./new/js/main.js"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        />
+        <link rel="stylesheet" type="text/css" href="./new/css/p_style.css" />
+
+        <!-- <script>
+            const __baseRoot = '/new'
+            const __basePath = '/new'
+        </script> -->
+    </head>
+    <body class="intro-animation">
+        <div id="wrap">
+            <!-- 헤더 -->
+            <header class="header">
+                <div class="header-wrap main">
+                    <div class="logo">
+                    
+                        <a href="#" class="logo_img"></a>
+                    </div>
+                    <div class="header container">
+                        <ul id="gnb">
+                            <li class="main_menu">
+                                <a href="/new/sub/01/01.html" class="titDot">Menu</a>
+                                <ul class="depth02">
+                                    <li><a href="/new/sub/01/01.html">이달의맛</a></li>
+                                    <li><a href="/new/sub/01/02.html">아이스크림</a></li>
+                                    <li><a href="/new/sub/01/03.html">블록팩/레디팩</a></li>
+                                    <li><a href="/new/sub/01/04.html">디저트</a></li>
+                                    <li><a href="/new/sub/01/05.html">음료</a></li>
+                                    <li><a href="/new/sub/01/05.html">커피</a></li>
+                                </ul>
+                            </li>
+                            <li class="main_menu">
+                                <a href="/new/sub/02/01.html" class="titDot">BR play</a>
+                                <ul class="depth02">
+                                    <li><a href="/new/sub/02/01.html">프로모션</a></li>
+                                    <li><a href="/new/sub/02/02.html">제휴혜택</a></li>
+                                    <li><a href="/new/sub/02/03.html">배라광장</a></li>
+                                    <li><a href="/new/sub/02/04.html">BR레시피</a></li>
+                                    <li><a href="/new/sub/02/05.html">마이플레이버리스트</a></li>
+                                </ul>
+                            </li>
+                            <li class="main_menu">
+                                <a href="/new/sub/03/01.html" class="titDot">BR스토리</a>
+                                <ul class="depth02">
+                                    <li><a href="/new/sub/03/01.html">브랜드 스토리</a></li>
+                                    <li><a href="/new/sub/03/02.html">이달의 맛 히스토리</a></li>
+                                    <li><a href="/new/sub/03/03.html">Be Better</a></li>                      
+                                </ul>
+                            </li>
+                            <li class="main_menu">
+                                <a href="/new/sub/04/01.html" class="titDot">Deilivery/Store</a>
+                                <ul class="depth02">
+                                    <li><a href="/new/sub/04/01.html">매장찾기</a></li>
+                                    <li><a href="/new/sub/04/02.html">플래그십스토어</a></li>
+                                    <li><a href="/new/sub/04/03.html">Flow매장</a></li>
+                                    <li><a href="/new/sub/04/04.html">배달주문</a></li>
+                                    <li><a href="/new/sub/04/05.html">단체주문</a></li>               
+                                </ul>                          
+                        </ul>
+                    </div>           
+                </div>
+            </header>
+            <!-- 퀵메뉴 -->
+            <a href="" class="topBtn"><img src="http://www.smart-pain.com/new/images/main/top_btn.png" /></a>
+            <div class="quickWrap">
+                <p class="quickBtn">
+                    <img src="./new/imgaes/h_logo (1).png" />
+                    <img src="http://www.smart-pain.com/new/images/main/quick_txt.png" class="text" />
+                </p>
+                <div class="quickCont">
+                    <div class="quickClose">
+                        <img src="http://www.smart-pain.com/new/images/main/quick_close.png" alt="close" />
+                    </div>
+                    <p class="tit">2월 이달의 맛,<br>인스타그램에 사진을 올려주세요!</p>
+                    <div class="itemList">
+                        <div class="item">
+                            <div class="flex">
+                                <p>이벤트 기간</p>
+                            </div>
+                            <h5>02월01일 ~ 02월26일</h5>
+                            <a
+                                href="#"
+                                target="_blank"
+                                class="resebtn"
+                            >
+                              
+                            자세히 보러가기
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="flex">
+                                <p>참여방법</p>
+                                <div>
+                                    <a href="#" target="_blank"></a>
+                                </div>
+                            </div>
+                            인스타그램에서 베스킨라빈스를 팔로잉하고 #바삭한 쫀꾸렛 #아이스크램과 함께 사진올리기!
+                            <a
+                                href="#"
+                                target="_blank"
+                                class="resebtn"
+                            >
+                            자세히 보러가기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 섹션1,이달의맛 -->
+            <section class="main_home Msection1">
+                <div class="borderPadding">
+                    <div class="main_bg_slider main_slider">
+                        <div class="item v1">
+                            <div
+                                class="img"
+                                style="
+                                    background: url('https://www.baskinrobbins.co.kr/upload/main/banner/dd28b51c17a0e9ff9fc147541ba1fea8.jpg')
+                                   no-repeat center/cover;
+                                "
+                            ></div>
+                        </div>
+                        <div class="item v2">
+                            <div
+                                class="img"
+                                style="
+                                    background: url('https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/426298903_801207902050844_5165961652274599324_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=waj6joO4fysAX8QfoXK&_nc_ht=scontent-ssn1-1.xx&oh=00_AfAQkzc6l6Xpide6vrZz8lfwEALLMnQOqWFmMorAk0lJtw&oe=65D97B77')
+                                        no-repeat center/cover;
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="text_slider_wrap">
+                        <div class="inner">
+                            <div class="main_text_slider main_slider">
+
+                                <div class="item v2">
+                                    <div class="text_wrap">
+                                        <div class="title1">
+                                            <p>
+                                                크로우 캐년 시리얼볼 세트 매장판매!<span
+                                                    class="orange_color"
+                                                    >.</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="txt1">
+                                            <p>2024.01.23 ~ 재고소진 시까지.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="indicator">
+                                <div class="dot"></div>
+                                <button type="button" class="status_wrap"><span class="status stop"></span></button>
+                                <button type="button" class="btn prev"></button>
+                                <button type="button" class="btn next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orange_bg"></div>
+            </section>
+            <!-- 섹션2,프로모션 -->
+            <section class="Msectionnew2">
+                <div class="transition_section">
+                    <div class="flex-box">
+                        <div class="flex-box--wrap">
+                            <p class="panelsText fixedText">
+                                WELCOME TO!<br />
+                                Baskin Robbins
+                            </p>
+                            <div class="panel cursor_wrap heightImg">
+                                <h2>BR History</h2>
+                                <p class="sec-info">
+                                    한 입에 물면 달콤하게 사르르 녹는 아이스크림.<br>
+                                    당신이 어떤 기분이든 그 아이스크림을 따라 당신의 기분이 달콤해져있을거에요.
+                                </p>
+                            </div>
+                            <div class="panel cursor_wrap hover--eff heightImg">
+                                <a href="/new/sub/06/02.html" data-aos="fade-up" data-aos-duration="400">
+                                
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/5770da09cfb1943ad29a033b4cef77cb.jpg"
+                                        alt="초코나무숲"
+                                        class="def_img"
+                                    />
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/main/6a359eecee6a0e4fe8ff465f7747b120.png"
+                                        alt="초코나무숲"
+                                        class="hover_img"
+                                    />
+                                    <span>#초코나무숲 #녹차 #초코볼</span>
+                                </a>
+                            </div>
+                            <div class="panel cursor_wrap hover--eff heightImg">
+                                <a href="/new/sub/06/03.html" data-aos="fade-up" data-aos-duration="400">                                                                                         
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/364f9ea0107c8d9eeed17f6b272090fe.jpg"
+                                        alt="아빠는 딸바봉"
+                                        class="def_img"
+                                    />
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/main/abd67bc325966a949b24f08e75d8f1a7.png"
+                                        alt="아빠는 딸바봉"
+                                        class="hover_img"
+                                    />
+                                    <span>#딸기 #바닐라 #크런치</span>
+                                </a>
+                            </div>
+                            <div class="panel cursor_wrap hover--eff heightImg">
+                                <a href="/new/sub/06/03.html" data-aos="fade-up" data-aos-duration="400">                    
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/e6e267822cd815a5163bff682553bdcc.jpg"
+                                        alt="자모카 아몬드 훠지"
+                                        class="def_img"
+                                    />
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/main/f31388da0371388c2086a7c90990a097.png"
+                                        alt="자모카 아몬드 훠지"
+                                        class="hover_img"                                       
+                                    />
+                                    <span>#자모카 #아몬드 #모카 #초콜릿</span>
+                                </a>
+                            </div>
+                            <div class="panel cursor_wrap hover--eff heightImg">
+                                <a href="/new/sub/06/03.html" data-aos="fade-up" data-aos-duration="400">                                                                                           
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/5d22c8952caeead057895d75baed0867.jpg"
+                                        alt="슈퍼펭귄시리얼"
+                                        class="def_img"
+                                    />
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/main/7d63019cc45792fde516a62f8d8078ef.png"
+                                        alt="슈퍼펭귄시리얼"
+                                        class="hover_img"
+                                    />
+                                    <span>#시리얼 #크런키 #아몬드</span>
+                                </a>
+                            </div>
+
+                            <div class="panel cursor_wrap hover--eff heightImg">
+                                <a href="/new/sub/06/03.html" data-aos="fade-up" data-aos-duration="400">                          
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/9c4bd861eb372a056db535f6dd30c88a.jpg"
+                                        alt="초코,우리이제헤이즐넛"
+                                        class="def_img"
+                                    />
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/main/ab38efb84d13b7c13b784298404999a0.png"
+                                        alt="초코,우리이제헤이즐넛"
+                                        class="hover_img"
+                                    />
+                                    <span>#진정한 #초콜릿 #헤이즐넛</span>
+                                </a>
+                            </div>
+                            <div class="panel cursor_wrap hover--eff heightImg">
+                                <a href="/new/sub/06/03.html" data-aos="fade-up" data-aos-duration="400">                          
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/d09aa0a5dcd3845ef806c60e1b6133a6.jpg"
+                                        alt="도라에몽팥붕슈붕"
+                                        class="def_img"
+                                    />
+                                    <img
+                                        src="https://www.baskinrobbins.co.kr/upload/product/main/312bb266dea891d92b1ddec1067e467a.png"
+                                        alt="도라에몽팥붕슈붕"
+                                        class="hover_img"
+                                    />
+                                    <span>#도라에몽의 팥붕 슈붕</span>
+                                </a>
+                            </div>
+                         
+                                </div>
+                            </div>
+                            <div class="panel last heightImg smartnetwork">
+                                <div>
+                                    <h1>smart<br />network</h1>
+                                    <p>
+                                        스마트마취통증의학과는 안양시 지역의 대표적인<br />
+                                        비수술 통증치료 네트워크 병원입니다.
+                                    </p>
+                                    <a href="/new/sub/06/01.html">
+                                        <img
+                                            src="http://www.smart-pain.com/new/images/main/Msection2_img04_btntxt.png"
+                                            alt=""
+                                        />
+                                        <!-- <div class="button__bg"></div><span>스마트 네트워크 소개</span> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel"></div>
+                            <div class="panel"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 섹션3,프로모션bg -->
+            <section class="Msection3">
+                <div class="flex_box">
+                    <div class="text_wrap">
+                        <div class="line_wrap msection3--line1" data-aos="fade-up" data-aos-duration="6000">
+                            <span class="text" style="color: #f986bd;">베스킨라빈스만의</span
+                            ><span class="item_img"
+                                ><img src="https://img.hankyung.com/photo/201809/01.17872120.1.jpg" style="width: 75px;
+                                height: 75px;"></span
+                            ><span class="text">특별한</span>
+                        </div>
+                        <div
+                            class="line_wrap msection3--line2"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                            data-aos-duration="6000"
+                        >
+                            <span class="text">프로모션</span
+                            ><span class="item_img"
+                                ><img src="https://cdn.foodnews.co.kr/news/photo/202203/96093_57182_2025.png" style="width: 75px;
+                                height: 75px;"></span
+                            ><span class="text" style="color: #f986bd;">이벤트!</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Msection4">
+                <div class="black_bg"></div>
+                <div class="container" style="max-width: 1700px">
+                    <div class="list_wrap list1" data-aos="fade-up">
+                        <div class="img_wrap">
+                            <div class="ani_orange left"></div>
+                            <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/409808980_764188882419413_5716359393333048856_n.jpg?stp=dst-jpg_p480x480&_nc_cat=106&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=HM6hZQsLZdIAX_safGT&_nc_ht=scontent-ssn1-1.xx&oh=00_AfBoRjiMxOnW6ttJiBrc_Yv1qGiEytoJCwVVi6u4SeEs2Q&oe=65DB3661" 
+                            
+                            >
+                        </div>
+                        <div class="txt_link">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">First</p>
+                                <h1>
+                                    고디바 다크 크런치포함<br />
+                                    <b>싱글레귤러 1+1 행사</b>특별연장<span class="orange_color">.</span>
+                                </h1>
+                            </div>
+                            <div class="link_wrap" data-aos="fade-up" data-aos-delay="300">
+                                <a href="/new/sub/01/01.html" class="button--bestia--main">
+                                    <div class="button__bg"></div>
+                                    <span>자세히 보러가기</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_wrap list2" data-aos="fade-up">
+                        <div class="txt_link left">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">Second</p>
+                                <h1 style="letter-spacing: -0.08em">
+                                    <b>크로우캐년과 베스킨라빈스의콜라보</b><br />
+                                </h1>
+                                크로우캐년만의 감성을 담은 제품을 베스킨라빈스 매장에서 만나보세요!<br />
+                                  24.01.29 ~ 재고소진 시 까지<span class="orange_color">.</span>
+                            </div>
+                            <div class="link_wrap" data-aos="fade-up" data-aos-delay="300">
+                                <a href="/new/sub/06/01.html#smart" class="button--bestia--main">
+                                    <div class="button__bg"></div>
+                                    <span>판매매장 보러가기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img_wrap">
+                            <div class="ani_orange right"></div>
+                            <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/426161045_801945255310442_6367512677577056550_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=jPJanfZtrvgAX-ExJ-y&_nc_oc=AQlkNG8_vegAIZUGnX4pVtcq-bjHfR90G-t97qrr24x8kaIlbaIJwYRJ8uJqrIv33V4&_nc_ht=scontent-ssn1-1.xx&oh=00_AfCtPt4WskiN59hq70vzG_0-fhbS_eYMeH6wSVTIJmi-jA&oe=65DAEC47"
+                            >
+                        </div>
+                    </div>
+                    <div class="list_wrap list3" data-aos="fade-up">
+                        <div class="img_wrap">
+                            <div class="ani_orange left"></div>
+                            <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/428600518_809807517857549_5076846614019988774_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=GDzRYuW4AzYAX-usK9q&_nc_ht=scontent-ssn1-1.xx&oh=00_AfBc3DpL5aJNbEzwncIdx3wieChGlp5hnLDNASmYa4xMGA&oe=65DB5BCA" />
+                        </div>
+                        <div class="txt_link">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">Third</p>
+                                <h1>
+                                    <b>쿼터구매 시 </b><br />
+                                    <b>30%</b> 할인 및 적립                                                                    
+                                </h1>
+
+                                *T맴버십 T day 매직 바코드 제시 시 혜택 제공<br>
+                                *이벤트 기간 동안 1회 이용 가능<br>
+                                *쿼터(18,500원)구매 시, 30% 할인/적립(5600원/P)
+                                <span class="orange_color">.</span>
+                            </div>
+                            <div class="link_wrap" data-aos="fade-up" data-aos-delay="300">
+                                <a href="/new/sub/01/02.html" class="button--bestia--main">
+                                    <div class="button__bg"></div>
+                                    <span>자세히 보러가기</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_wrap list4" data-aos="fade-up">
+                        <div class="txt_link left" style="padding-left: 170px">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">Fourth</p>
+                                <h1>
+                                    <b>X-MAS 케이크 <br />최대 28% 혜택</b>
+                                </h1>
+                                기간:2024-12-18 ~ 2024-12-25
+                                <span class="orange_color">.</span>
+                            </div>
+                            <div class="link_wrap" data-aos="fade-up" data-aos-delay="300">
+                                <a href="/new/sub/01/03.html" class="button--bestia--main">
+                                    <div class="button__bg"></div>
+                                    <span>혜택 보러가기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img_wrap">
+                            <div class="ani_orange right"></div>
+                            <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/411755911_769027558602212_7491112326393008060_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=e8KEwtqMoesAX8yAowG&_nc_ht=scontent-ssn1-1.xx&oh=00_AfAZLmQjACfxZ3NiaTOqYTLen6chJ2tK1DEz9FsiGtHKoA&oe=65DAF661" />
+                        </div>
+                    </div>
+                    <div class="list_wrap list5" data-aos="fade-up">
+                        <div class="img_wrap">
+                            <div class="ani_orange left"></div>
+                            <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/404993747_752032316968403_5888370558699477965_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=re_93aYkYCsAX9XwERK&_nc_ht=scontent-ssn1-1.xx&oh=00_AfCOgqEz9kwdWPG92IMQSiUWxDcfxmEQqcSDxQpNOqH2AA&oe=65DB0EF7" />
+                        </div>
+                        <div class="txt_link">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">Fifth</p>
+                                <h1 class="ani__txt__fff" data-color="black white">                       
+                                    <b>도라에몽! 같이놀자~</b><br />
+                                    정해진 시각에 나타나는 도라에몽을 찾아라!
+                                </h1>
+                                기간 : 2024-02-22 ~ 2024-02-23<span class="orange_color">.</span>
+                            </div>
+                            <div class="link_wrap topbot_link" data-aos="fade-up" data-aos-delay="100">
+                                <a href="/new/sub/04/01.html" class="button--bestia--main ani__txt__fff">
+                                    <div class="button__bg"></div>
+                                    <span>자세히 보러가기</span>
+                                </a>
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Msection5">
+                <div class="black_bg"></div>
+                <div class="title_list">
+                    <span class="list_item_top">
+                        <span class="label">Only BR</span>
+                        <span class="space"></span>
+                    </span>
+                    <span class="list_item_bottom">
+                        <span class="label">EVENT!</span>
+                        <span class="space"></span>
+                    </span>
+                </div>
+            </section>
+            <!-- 동영상 -->
+            <section class="MsectionNew6">
+              <div class="card-wrapper" data-aos="fade-up">
+                <div class="card">
+                    <img src="./new/imgaes/card1.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="./new/imgaes/card2.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="./new/imgaes/card3.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="./new/imgaes/card4.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="./new/imgaes/card5.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="./new/imgaes/card6.png" alt="">
+                </div>
+              </div>
+            </section>
+            <!-- 섹션7,be better -->
+            <section class="MsectionNew7text">
+                <p>
+                    <img
+                        src="./new/imgaes/pink.png"
+                        alt="special program for quick recovery"
+                    /><img
+                        src="http://www.smart-pain.com/new/images/main/Msection72_text01.png"
+                        alt="special program for quick recovery"
+                    />
+                </p>
+                <p>
+                    <img
+                        src="./new/imgaes/Untitled.png"
+                        alt="special program for quick recovery"
+                    /><img
+                        src="http://www.smart-pain.com/new/images/main/Msection72_text02.png"
+                        alt="special program for quick recovery"
+                    />
+                </p>
+            </section>
+            <section class="MsectionNew7">
+                <div class="sub_top" data-aos="fade-up">
+                    <h1>배려가 사회와 함께하는 방법,<br>
+                     가치 있는 같이   
+                        <span class="orange_color">.</span></h1>
+                </div>
+                <div class="flex">
+                    <div class="MsectionNew7Lt">
+                        <div class="index-flow__side">
+                            <div class="index-flow__image">
+                                <img
+                                    src="https://www.baskinrobbins.co.kr/assets/images/story/be_better/img_farm.png"
+                                    alt="핑크팜"
+                                    class="image01"
+                                />
+                                <img
+                                    src="https://www.baskinrobbins.co.kr/assets/images/story/be_better/img_dream.png"
+                                    alt="핑크드림"
+                                    class="image02"
+                                />
+                                <img
+                                    src="https://www.baskinrobbins.co.kr/assets/images/story/be_better/img_link.png"
+                                    alt="핑크링크"
+                                    class="image03"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MsectionNew7Rt">
+                        <div class="index-flow__body">
+                            <div class="index-flow__item item01" data-change-trigger>
+                                <h3 class="titleWrap">                                 
+                                        <div class="title">
+                                            <p style="color:#ff5484;">지역 농가 상생 프로젝트
+                                                <img src="./new/imgaes/icon_bullet_active.png" 
+                                                style="width: 40px;
+                                                height: 40px;
+                                                margin-left: 5px;
+                                                "
+                                                />
+                                            </p>
+                                        </div>                                                                                                        
+                                </h3>
+                                <div class="infoWrap">
+                                    <h4 class="subtitle">핑크팜 캠패인이란?</h4>
+                                    <dl class="">
+                                        <div class="item">
+                                            <dt>POINT 01</dt>
+                                            <dd>핑크팜 캠페인은 배스킨라빈스와 지역농가 청년농부지원을 위한 콜라보레이션
+                                                상생 프로젝트 입니다. 지역농가 지원을 위한 상품개발부터 원료 수급,특화 제품 개발,
+                                                홍보까지 지역농가 지원을 위한캠페인을 진행하고 있습니다.</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 02</dt>
+                                            <dd>지역농가, 청년농부 지원 콜라보레이션 제품 출시 </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="index-flow__item item02" data-change-trigger>
+                                <h3 class="titleWrap">
+                                    <div>
+                                        <div class="title">
+                                            <p style="color: #ae8d60;">청소년 자립 지원 프로젝트
+                                                <img src="./new/imgaes/icon_bullet_active.png" 
+                                                style="width: 40px;
+                                                height: 40px;
+                                                margin-left: 5px;
+                                                "
+                                            </p>
+                                        </div>
+                                           
+                                </h3>
+                                <div class="infoWrap">
+                                    <h4 class="subtitle">핑크 드림 캠페인이란?</h4>
+                                    <dl class="">
+                                        <div class="item">
+                                            <dt>POINT 01</dt>
+                                            <dd>배스킨라빈스는 월드비전과 함께 보호 종료 청소년들을 위한 자립을 돕고 꿈의 실현을 위한
+                                                장학금 제공 및 멘토링으로 지속적인 커뮤니케이션을 할 수 있는 장을 마련합니다</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 02</dt>
+                                            <dd>학업 지원 장학금부터 맨토링, 인재채용까지!</dd>                                         
+                                        </div>
+
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="index-flow__item item03" data-change-trigger>
+                                <h3 class="titleWrap">
+                                    <div>
+                                        <div class="title">
+                                            <p
+                                            style="color: #00922a;" 
+                                            >중소 기업 콜라보 프로젝트
+                                                <img src="./new/imgaes/icon_bullet_active.png" 
+                                                style="width: 40px;
+                                                height: 40px;
+                                                margin-left: 5px;
+                                                "
+                                            </p>
+                                    </div>
+                                </h3>
+                                <div class="infoWrap">
+                                    <h4 class="subtitle">핑크링크 캠페인이란?</h4>
+                                    <dl class="">
+                                        <div class="item">
+                                            <dt>POINT 01</dt>
+                                            <dd>핑크링크 캠페인은 배스킨라빈스에서 중소기업 지원을 위해 진행하는
+                                                콜라보레이션 상생 프로젝트입니다. 제품 개발부터, 전국 매장 제품 출시 및 광고 지원까지
+                                                중소기업과 함께 상생하기 위해 노력합니다..</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 02</dt>
+                                            <dd>중소기업 콜라보레이션 제품 출시</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Msection7--text">
+                <div class="sub_top" data-aos="fade-up">
+                    <h1>New Menu<br> Preview<span class="orange_color"></span></h1>
+                    <p>#고디바다크크런치 와 배라의 초코 맛이 모였다 !</p>
+                </div>
+            </section>
+            <section class="Msection7">
+                <div class="video_wrap">
+                    <div class="Video_expand">          		
+                        <img src="./new/imgaes/415784332_775537884617846_205118293752610884_n.jfif" alt="">
+                    </div>
+                </div>
+            </section>
+            <div id="cursor"></div>
+          
+            <div class="layerPop-overlay"></div>
+    
+        <!--wrap-->
+        <footer data-aos="fade-up">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="flex_box flex-between">
+                        <div class="left">
+                            <h1 class="tit">baskin<br />robbins<span class="orange_color">.</span></h1>
+                            <ul class="snsList">
+
+                                <li class="youtube">
+                                    <a href="https://www.youtube.com/@user-ku9us4bk9m" target="_blank">youtube</a>
+                                </li>
+                                <li class="instar">
+                                    <a href="https://www.instagram.com/smart_pain/" target="_blank">instar</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <div class="flex_box flex-between">
+                                <div class="service">
+                                    <h2>Menu</h2>
+
+                                    <ul>
+                                        <li><span>이달의 맛</span></li>
+                                        <li><span>아이스크림</span></li>
+                                        <li><span>블록팩/레디팩</span></li>
+                                        <li><span>아이스크림 케이크</span></li>
+                                        <li><span>디저트</span></li>
+                                        <li><span>음료</span></li>
+                                        <li><span>커피</span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="service">
+                                    <h2>BR Play</h2>
+
+                                    <ul>
+                                        <li><span>이벤트</span></li>
+                                        <li><span>배라광장(CCM)</span></li>
+                                        <li><span>BR레시피</span></li>
+                                        <li><span>마이플레이버리스트</span></li>
+                                    </ul>
+                                </div>
+                                <div class="service">
+                                    <h2>BR story</h2>
+                                    <ul>
+                                        <li><span>브랜드 스토리</span></li>
+                                        <li><span>이달의 맛 히스토리</span></li>
+                                        <li><span>Be better</span></li>
+                                    </ul>
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="flex_box flex-between">
+                        <div class="address flex_box">
+                            <dl>
+                                <dd>
+                                    사업자 등록번호 : 303-81-09535 <br>
+
+                                    비알코리아(주) 대표이사 도세호 <br>
+
+                                    서울특별시 서초구 남부순환로 2620(양재동 11-149번지)
+                                    TEL : 080-555-3131 <br>
+
+                                    개인정보관리책임자 : 조성희/상무보 <br>
+
+                                Copyright © 2023 BRKOREA Company. All Rights Reserved.
+                                </dd>
+                            </dl>
+                        
+                        </div>
+                        <div class="links">
+                            <a href="/new/sub/06/07.html">개인정보처리방침</a>
+                            <a href="/new/sub/06/08.html">서비스이용약관</a>
+                            <a href="/new/sub/06/05.html">채용문의</a>
+                            <a href="/new/sub/06/05.html">신규 직영점 입점제의</a>
+                            <a href="/new/sub/06/05.html">점포개설문의</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $(window).resize(function () {
+                var docWidth = $(window).width()
+
+                if (docWidth < 1000) {
+                    var href = $(location).attr('href')
+                    var pathname = $(location).attr('pathname')
+
+                    document.location.href =
+                        __basePath + '/mo' + href.substring(href.lastIndexOf(pathname) + __basePath.length, href.length)
+                }
+            })
+        </script>
+    </body>
+</html>
